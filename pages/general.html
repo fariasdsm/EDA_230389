@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UTcloud</title>
+  <link rel="stylesheet" href="/pages/general.css"> 
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <h1>UTCloud</h1>
+    </div>
+    <div class="navbar-user">
+      <div>
+        <span id="user-name"></span>
+        <br>
+        <span id="user-email"></span>
+      </div>
+      <button class="logout-btn" onclick="logout()">Cerrar sesión</button>
+    </div>
+  </nav>
+
+  <div id="file-list"></div>
+
+  <div>
+    <input type="text" id="file-name" placeholder="Nombre del archivo">
+    <button onclick="addFile()">Agregar Archivo</button>
+    <button onclick="editFile()">Editar Archivo</button>
+    <button onclick="deleteFile()">Eliminar Archivo</button>
+  </div>
+
+<script src="/pages/main.js"></script>
+</body>
+</html>
